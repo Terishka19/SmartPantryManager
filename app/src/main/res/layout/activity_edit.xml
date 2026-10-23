@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F6F8F5" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp">
+    <TextView android:id="@+id/heading" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add ingredient" android:textColor="#194B38" android:textSize="28sp" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ingredient name" android:textColor="#194B38"/>
+    <EditText android:id="@+id/nameInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. Tomato" android:inputType="textCapWords" android:maxLength="70"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quantity" android:textColor="#194B38" android:layout_marginTop="16dp"/>
+    <EditText android:id="@+id/qtyInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="e.g. 2" android:inputType="numberDecimal"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Unit" android:textColor="#194B38" android:layout_marginTop="16dp"/>
+    <Spinner android:id="@+id/unitInput" android:layout_width="match_parent" android:layout_height="48dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Expiry date (optional)" android:textColor="#194B38" android:layout_marginTop="16dp"/>
+    <EditText android:id="@+id/expiryInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tap to choose date" android:focusable="false"/>
+    <Button android:id="@+id/clearDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Clear expiry date" android:textAllCaps="false"/>
+    <Button android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="52dp" android:text="Save ingredient" android:textColor="#FFFFFF" android:textAllCaps="false" android:background="@drawable/button_green" android:layout_marginTop="24dp"/>
+</LinearLayout>
+</ScrollView>

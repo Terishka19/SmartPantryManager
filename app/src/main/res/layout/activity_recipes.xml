@@ -1,0 +1,131 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F8F5">
+
+    <!-- PREMIUM RECIPES HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#194B38"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMART PANTRY / RECIPES"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:textColor="#BADAC8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Suggested Recipes"
+            android:textSize="29sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Discover meals using ingredients you have."
+            android:textSize="14sp"
+            android:textColor="#D7E7DD" />
+
+    </LinearLayout>
+
+    <!-- RECIPE STATUS -->
+    <TextView
+        android:id="@+id/recipeStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:text="Checking your pantry for recipes..."
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#194B38" />
+
+    <!-- RECIPE SEARCH -->
+    <EditText
+        android:id="@+id/recipeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/input_bg"
+        android:hint="Search recipes"
+        android:inputType="text"
+        android:singleLine="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#194B38"
+        android:textColorHint="#83978A"
+        android:textSize="14sp" />
+
+    <!-- EMPTY RECIPE MESSAGE -->
+    <TextView
+        android:id="@+id/emptyRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/surface_soft"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="No matching recipes found. Add ingredients to your pantry to unlock more meals."
+        android:textColor="#71877A"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <!-- ADD INGREDIENT BUTTON -->
+    <Button
+        android:id="@+id/addFromRecipes"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#1D563E"
+        android:text="+ Add ingredients"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <!-- RECIPES LIST -->
+    <ListView
+        android:id="@+id/recipeList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="12dp" />
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

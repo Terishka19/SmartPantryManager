@@ -1,0 +1,162 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F8F5">
+
+    <!-- PREMIUM HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#194B38"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMART PANTRY / OVERVIEW"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:textColor="#BADAC8" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="My Pantry"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Your kitchen, beautifully organised."
+            android:textSize="15sp"
+            android:textColor="#D7E7DD" />
+
+    </LinearLayout>
+
+    <!-- PANTRY OVERVIEW -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="Your pantry"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#194B38" />
+
+    <!-- PANTRY HEALTH DASHBOARD -->
+    <TextView
+        android:id="@+id/pantryStats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/surface_soft"
+        android:padding="16dp"
+        android:text="Fresh: 0   •   Use soon: 0   •   Expired: 0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#245B43" />
+
+    <!-- ADD INGREDIENT -->
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="+ Add ingredient"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1D563E" />
+
+    <!-- SEARCH AND SORT CONTROLS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:id="@+id/pantrySearch"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:hint="Search ingredients"
+            android:singleLine="true"
+            android:inputType="text"
+            android:paddingLeft="14dp"
+            android:paddingRight="12dp"
+            android:textSize="14sp"
+            android:textColor="#194B38"
+            android:textColorHint="#83978A"
+            android:background="@drawable/input_bg" />
+
+        <Button
+            android:id="@+id/sortButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginLeft="8dp"
+            android:minWidth="90dp"
+            android:text="Sort"
+            android:textAllCaps="false"
+            android:textColor="#194B38"
+            android:backgroundTint="#E3EBE3" />
+
+    </LinearLayout>
+
+    <!-- EMPTY PANTRY MESSAGE -->
+    <TextView
+        android:id="@+id/emptyPantry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="No ingredients found."
+        android:textSize="15sp"
+        android:textColor="#71877A"
+        android:visibility="gone" />
+
+    <!-- INGREDIENT LIST -->
+    <ListView
+        android:id="@+id/pantryList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="12dp"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp" />
+
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF" />
+
+</LinearLayout>

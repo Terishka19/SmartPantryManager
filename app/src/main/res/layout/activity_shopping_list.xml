@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F6F8F5" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="24dp" android:orientation="vertical" android:background="#194B38">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SMART PANTRY / PLAN" android:textColor="#B9DBCA" android:textSize="11sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:text="Shopping List" android:textSize="30sp"
+            android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Everything you need for your next meal." android:textColor="#D7E7DD" android:textSize="14sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/shoppingSummary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="18dp" android:textColor="#245B43" android:textSize="15sp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingLeft="14dp" android:paddingRight="14dp">
+        <Button android:id="@+id/goAlmost" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="Find recipes" android:textAllCaps="false"
+            android:backgroundTint="#1D563E" android:textColor="#FFFFFF"/>
+        <Button android:id="@+id/clearPurchased" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:layout_marginLeft="8dp"
+            android:text="Clear purchased" android:textAllCaps="false"
+            android:backgroundTint="#E4F0E6" android:textColor="#194B38"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/shoppingRows" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp"/>
+    </ScrollView>
+    <LinearLayout android:id="@+id/bottomBar" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>

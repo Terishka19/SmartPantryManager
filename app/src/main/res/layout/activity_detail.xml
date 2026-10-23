@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F6F8F5">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="22dp" android:orientation="vertical">
+    <Button android:id="@+id/backButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="← Back to recipes" android:textAllCaps="false"/>
+    <TextView android:id="@+id/recipeTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:textColor="#194B38" android:textSize="29sp" android:textStyle="bold"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Ingredients" android:textSize="20sp" android:textStyle="bold" android:textColor="#194B38"/>
+    <LinearLayout android:id="@+id/requirements" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="10dp"/>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Preparation" android:textSize="20sp" android:textStyle="bold" android:textColor="#194B38"/>
+    <TextView android:id="@+id/recipeSteps" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textColor="#335B47" android:textSize="17sp" android:lineSpacingExtra="6dp"/>
+</LinearLayout>
+</ScrollView>

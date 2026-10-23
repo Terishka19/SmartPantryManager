@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#F6F8F5" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="24dp" android:orientation="vertical" android:background="#194B38">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SMART PANTRY / DISCOVER" android:textColor="#B9DBCA" android:textSize="11sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:text="Almost There" android:textSize="30sp"
+            android:textStyle="bold" android:textColor="#FFFFFF"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Just one or two ingredients away." android:textColor="#D7E7DD"
+            android:textSize="14sp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/almostSummary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="18dp" android:textSize="15sp"
+        android:textColor="#245B43"/>
+    <Button android:id="@+id/openShopping" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginRight="18dp"
+        android:text="Open Shopping List  →" android:textAllCaps="false" android:textColor="#FFFFFF"
+        android:backgroundTint="#1D563E"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/almostResults" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp"/>
+    </ScrollView>
+    <LinearLayout android:id="@+id/bottomBar" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>

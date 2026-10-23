@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="#F6F8F5">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:background="#194B38" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="SMART PANTRY / PREFERENCES" android:textColor="#B9DBCA"
+            android:textStyle="bold" android:textSize="11sp" android:letterSpacing="0.12"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:text="Settings" android:textStyle="bold"
+            android:textSize="32sp" android:textColor="#FFFFFF"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" android:text="Your kitchen, your preferences."
+            android:textColor="#D7E7DD" android:textSize="14sp"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="18dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="PANTRY HEALTH" android:textSize="12sp" android:textStyle="bold"
+                android:letterSpacing="0.10" android:textColor="#71877A" android:paddingBottom="10dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="18dp" android:background="@drawable/card">
+                <CheckBox android:id="@+id/alertCheck" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:text="Show expiry overview"
+                    android:buttonTint="#1D563E" android:textColor="#194B38" android:textSize="16sp"/>
+                <TextView android:id="@+id/expirySummary" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:textColor="#245B43" android:textSize="15sp" android:textStyle="bold"/>
+                <TextView android:id="@+id/alertNote" android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                    android:textSize="13sp" android:textColor="#71877A"/>
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="26dp" android:paddingBottom="10dp"
+                android:text="SMART KITCHEN" android:textColor="#71877A"
+                android:textSize="12sp" android:textStyle="bold" android:letterSpacing="0.10"/>
+            <Button android:id="@+id/settingsAlmost" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:minHeight="58dp"
+                android:backgroundTint="#E4F0E6" android:textColor="#194B38"
+                android:textAllCaps="false" android:textSize="16sp"
+                android:text="Almost There Recipes  →"/>
+            <Button android:id="@+id/settingsShopping" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:minHeight="58dp"
+                android:layout_marginTop="8dp" android:backgroundTint="#E4F0E6"
+                android:textColor="#194B38" android:textAllCaps="false" android:textSize="16sp"
+                android:text="My Shopping List  →"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="Find recipes missing just one or two ingredients, then add their shortages to a persistent shopping list."
+                android:textColor="#71877A" android:textSize="13sp"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="28dp" android:paddingBottom="10dp"
+                android:text="ABOUT" android:textSize="12sp" android:textStyle="bold"
+                android:textColor="#71877A" android:letterSpacing="0.10"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@drawable/card" android:padding="18dp"
+                android:text="Smart Pantry Manager • v1.1\n\nRuns fully offline. Ready to Cook requires every ingredient in sufficient quantity. Expired stock is excluded. Shopping items are saved locally on your phone."
+                android:textColor="#335B47" android:textSize="14sp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@+id/bottomBar" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical"/>
+</LinearLayout>
